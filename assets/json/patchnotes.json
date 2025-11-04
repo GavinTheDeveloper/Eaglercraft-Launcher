@@ -1,0 +1,16 @@
+[
+    {
+        "title": "Site Released!",
+        "version": "v1.0",
+        "description": "Published launcher for public use.",
+        "date": "Tuesday, November 4th, 2025",
+        "icon": "mod-icons/painting.png",
+        "type": "site",
+        "notes": [
+            "The launcher is now publicly available for use by everyone!",
+            "Allowed users to choose between multiple versions of Eaglercraft to play.",
+            "Added availability for Eaglercraft Classic and Indev versions.",
+            "Made various UI improvements and bug fixes, increasing overall stability and performance."
+        ]
+    }
+]

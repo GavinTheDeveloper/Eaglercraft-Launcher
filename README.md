@@ -1,0 +1,1 @@
+<img src=".github/assets/logo.svg" alt="Sandboxco.de Logo" align="center">

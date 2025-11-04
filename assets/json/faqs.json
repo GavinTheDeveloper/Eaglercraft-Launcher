@@ -1,0 +1,18 @@
+[
+    {
+       "question": "Will there be an offline download?",
+       "answer": "Possibly, once development is complete."
+    },
+    {
+       "question": "Is this launcher safe?",
+       "answer": "Yes, this launcher is 100% safe."
+    },
+    {
+       "question": "Why is the launcher so small?",
+       "answer": "The launcher is small because it uses web technologies such as HTML, CSS and JavaScript."
+    },
+    {
+       "question": "Why is my game crashing?",
+       "answer": "Make sure you have the latest version of your browser and that your device meets the minimum requirements to run Eaglercraft."
+    }
+]
