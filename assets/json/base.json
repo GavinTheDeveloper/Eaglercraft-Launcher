@@ -22,7 +22,7 @@
     },
     {
        "title": "Eaglercraft 1.8.8 WASM-GC",
-       "mversionc": "1.8.8-u51-wasm",
+       "version": "1.8.8-u51-wasm",
        "icon": "./assets/images/mc-icons/dirt-wasm.png",
        "link": "./version/1.8.8-wasm/",
        "active": false

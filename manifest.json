@@ -1,0 +1,16 @@
+{
+  "name": "gavmc.com",
+  "short_name": "Minecraft Launcher",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#52a435",
+  "theme_color": "#52a435",
+  "icons": [
+    {
+      "src": "/assets/icons/logo.png",
+      "sizes": "200x200",
+      "type": "image/png"
+    }
+  ]
+}
