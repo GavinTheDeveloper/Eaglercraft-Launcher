@@ -1,16 +1,42 @@
 {
-  "name": "gavmc.com",
-  "short_name": "Minecraft Launcher",
-  "start_url": "/",
-  "scope": "/",
+  "background_color": "#ffffff",
+  "description": "A minecraft themed launcher for Eaglercraft!",
+  "display_override": ["window-controls-overlay", "standalone"],
+  "dir": "ltr",
   "display": "standalone",
-  "background_color": "#52a435",
+  "name": "gavmc",
+  "orientation": "any",
+  "scope": "/",
+  "short_name": "gavmc",
+  "start_url": "/",
   "theme_color": "#52a435",
   "icons": [
     {
-      "src": "/assets/icons/logo.png",
+      "src": "https://gavmc.com/assets/images/logo.png",
+      "type": "image/png",
       "sizes": "200x200",
-      "type": "image/png"
+      "isSquare": true,
+      "isPng": true,
+      "isWebp": false,
+      "isJpg": false,
+      "width": 200,
+      "is512x512": false,
+      "is256x256": false,
+      "is192x192": false
+    },
+    {
+      "src": "https://mc.sandboxco.de/assets/images/logo.png",
+      "isSquare": false,
+      "isPng": true,
+      "isWebp": false,
+      "isJpg": false,
+      "width": 0,
+      "is512x512": false,
+      "is256x256": false,
+      "is192x192": false
     }
+  ],
+  "categories": [
+    "games"
   ]
 }
