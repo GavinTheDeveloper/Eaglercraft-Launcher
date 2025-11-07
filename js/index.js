@@ -443,4 +443,3 @@ generateprofile(1);
 generategames("./assets/json/base.json");
 generatefaqs();
 generatelaunchers("./assets/json/base.json");
-console.clear();
