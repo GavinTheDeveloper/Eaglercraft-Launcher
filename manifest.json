@@ -4,12 +4,12 @@
   "display_override": ["window-controls-overlay", "standalone"],
   "dir": "ltr",
   "display": "standalone",
-  "name": "gavmc",
+  "name": "Minecraft Launcher",
+  "short_name": "Minecraft",
   "orientation": "any",
   "scope": "/",
-  "short_name": "gavmc",
   "start_url": "/",
-  "theme_color": "#52a435",
+  "theme_color": "#2e2e2e",
   "icons": [
     {
       "src": "https://gavmc.com/assets/images/logo.png",
@@ -20,17 +20,6 @@
       "isWebp": false,
       "isJpg": false,
       "width": 200,
-      "is512x512": false,
-      "is256x256": false,
-      "is192x192": false
-    },
-    {
-      "src": "https://mc.sandboxco.de/assets/images/logo.png",
-      "isSquare": false,
-      "isPng": true,
-      "isWebp": false,
-      "isJpg": false,
-      "width": 0,
       "is512x512": false,
       "is256x256": false,
       "is192x192": false
