@@ -1,18 +1,19 @@
 {
   "background_color": "#ffffff",
   "description": "A minecraft themed launcher for Eaglercraft!",
-  "display_override": ["window-controls-overlay", "standalone"],
   "dir": "ltr",
   "display": "standalone",
+  "display_override": ["standalone"],
   "name": "Minecraft Launcher",
   "short_name": "Minecraft",
   "orientation": "any",
   "scope": "/",
   "start_url": "/",
+  "id": "/",
   "theme_color": "#008542",
   "icons": [
     {
-      "src": "https://gavmc.com/assets/images/logo.png",
+      "src": "/assets/images/logo.png",
       "type": "image/png",
       "sizes": "200x200",
       "isSquare": true,
@@ -23,6 +24,28 @@
       "is512x512": false,
       "is256x256": false,
       "is192x192": false
+    }
+  ],
+  "screenshots": [
+    {
+      "src": "/assets/images/controls-edition.jpg",
+      "type": "image/jpg",
+      "sizes": "1920x1080",
+      "label": "Minecraft Tutorial World"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "Play",
+      "short_name": "Play",
+      "description": "Start the latest version",
+      "url": "/version/1.12.2-wasm"
+    }
+  ],
+  "protocol_handlers": [
+    {
+      "protocol": "web+minecraft",
+      "url": "/?join=%s"
     }
   ],
   "categories": [
