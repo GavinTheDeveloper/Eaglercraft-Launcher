@@ -36,14 +36,14 @@
   ],
   "shortcuts": [
     {
-      "name": "Play",
-      "short_name": "Play",
+      "name": "Play 1.12.2 WASM-GC",
+      "short_name": "Play 1.12.2 WASM-GC",
       "description": "Start Eaglercraft 1.12.2 WASM-GC",
       "url": "/version/1.12.2-wasm"
     },
     {
-      "name": "Play",
-      "short_name": "Play",
+      "name": "Play 1.12.2",
+      "short_name": "Play 1.12.2",
       "description": "Start Eaglercraft 1.12.2",
       "url": "/version/1.12.2"
     }

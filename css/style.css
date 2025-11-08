@@ -124,7 +124,7 @@ hr { border: 0.1vh solid var(--ui-main-light); width: 74vw; }
 .dropdownIcon { color: white; width: 1.75vw; }
 .playButton { position: absolute; left: 32vw; bottom: 0.5vw; display: flex; align-items: center; width: 21.5vw; height: 5vw; background-image: url(../assets/images/play.png); background-size: cover; background-position: center; background-repeat: no-repeat; transition: 0.1s; }
 .playButton:hover { cursor: pointer; background-image: url(../assets/images/play-hover.png); transform: scale(1.05); }
-.username { position: absolute; top: 0; bottom: 0; right: 12vw; font-size: 1.35vw; }
+.username { position: absolute; top: 0; bottom: 0; right: 5vw; font-size: 1.35vw; }
 
 @keyframes drop {
   0% { transform: translateY(-300px) scaleY(0.9); opacity: 0; }

@@ -1,3 +1,15 @@
+// Mobile Redirect
+(function () {
+    // Basic mobile detection via userAgent
+    var isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(
+      navigator.userAgent
+    );
+
+    if (isMobile) {
+      window.location.href = "/version/1.8.8/?userscript=flameddogo99-eaglermobile.js";
+    }
+  })();
+
 // Not Added Feature
 function errorNA(text) {
     clearTimeout()
