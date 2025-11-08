@@ -1,129 +1,174 @@
 <!DOCTYPE html>
 <html lang="en">
 
+<!--
+            .--.       .--.
+        _  `    \     /    `  _
+         `\.===. \.^./ .===./`
+                \/`"`\/
+             ,  |     |  ,
+            / `\|;-.-'|/` \
+           /    |::\  |    \
+        .-' ,-'`|:::; |`'-, '-.
+            |   |::::\|   | 
+            |   |::::;|   |
+            |   \:::://   |
+            |    `.://'   |
+           .'             `.
+        _,'                 `,_
+-->
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Minecraft Launcher</title>
+
+    <!-- Stylesheets and Icons -->
     <link rel="stylesheet" href="./css/style.css">
-    <link rel="stylesheet" media="screen and (max-width: 1100px)" href="css/screensize.css">
-    <link rel="stylesheet" media="screen and (max-height: 550px)" href="css/screensize.css">
     <link rel="shortcut icon" href="./assets/images/logo.png" type="image/x-icon">
-    <meta content="Minecraft" property="og:title">
-    <meta content="A minecraft themed launcher for Eaglercraft!" property="og:description">
-    <meta content="https://gavmc.com/" property="og:url">
-    <meta content="https://gavmc.com/assets/images/logo.png" property="og:image">
+
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Minecraft">
+    <meta property="og:description" content="A minecraft themed launcher for Eaglercraft!">
+    <meta property="og:url" content="https://gavmc.com/">
+    <meta property="og:image" content="https://gavmc.com/assets/images/logo.png">
+
+    <!-- Theme and Manifest -->
+    <meta name="theme-color" content="#008542">
     <meta content="#52a435" data-react-helmet="true" name="theme-color">
     <link rel="manifest" href="/manifest.json" crossorigin="use-credentials" />
-    <meta name="theme-color" content="#008542">
 </head>
 
 <body>
+    <!-- Error Screens -->
+    <div id="screenerror">
+        <div>
+            <h1>Screen size not supported</h1>
+            <p>Please use a larger window or device.</p>
+        </div>
+    </div>
     <div id="notescreen"></div>
     <div id="naerror" class="error">
         <div>
             <p style="color: goldenrod;" id="errortext">This feature hasn't been implemented yet.</p>
         </div>
     </div>
-    <div id="screenerror" class="error">
-        <div>
-            <p>At this time, this screen resolution is unsupported and may cause visual artifacts.</p>
-        </div>
-    </div>
+
+    <!-- Sidebar Navigation -->
     <div class="sidebar" id="sidebar">
         <div onclick="webedition()" id="gtabs1" class="sidebarOptions selected">
             <img src="./assets/images/sidebar/i-web.png">
-            <div class="gTabsText">
-                <p>Web Edition </p>
-            </div>
+            <div class="gTabsText"><p>Web Edition </p></div>
         </div>
         <div onclick="moddededition()" id="gtabs2" class="sidebarOptions">
             <img src="./assets/images/sidebar/i-modded.png">
-            <div class="gTabsText">
-                <p>Modded Editions </p>
-            </div>
+            <div class="gTabsText"><p>Modded Editions </p></div>
         </div>
         <div onclick="eaglercontrols()" id="gtabs3" class="sidebarOptions">
             <img src="./assets/images/sidebar/i-controls.png">
-            <div class="gTabsText">
-                <p>Mobile/Controller </p>
-            </div>
+            <div class="gTabsText"><p>Mobile/Controller </p></div>
         </div>
         <div id="gtabs4" class="sidebarOptions sidebarBottom" onclick="errorNA('credits')">
-            <img src="./assets/images/sidebar/m-credits.png"><div class="gTabsText"><p>Credits</p></div>
+            <img src="./assets/images/sidebar/m-credits.png">
+            <div class="gTabsText"><p>Credits</p></div>
         </div>
         <div id="gtabs5" class="sidebarOptions sidebarBottom" onclick="errorNA('settings')">
-            <img src="./assets/images/sidebar/m-settings.png"><div class="gTabsText"><p>Settings</p></div>
+            <img src="./assets/images/sidebar/m-settings.png">
+            <div class="gTabsText"><p>Settings</p></div>
         </div>
     </div>
+
+    <!-- Main Content -->
     <div class="mainPage">
+        <!-- Game Header and Tabs -->
         <div class="gameHeader">
             <p id="gameedition" class="currentGame">EAGLERCRAFT WEB EDITION</p>
-                <ul class="gameTabs">
-                    <li id="header1" class="headerButtons selected" onclick="playheader()">Play</li>
-                    <li id="header2" style="display: none;" class="headerButtons" onclick="modsheader()">Mods</li>
-                    <li id="header3" class="headerButtons" onclick="faqsheader()">FAQ</li>
-                    <li id="header4" class="headerButtons" onclick="installationheader()">Installations</li>
-                    <li id="header6" class="headerButtons" onclick="patchnotesheader()">Patch Notes</li>
-                </ul>
+            <ul class="gameTabs">
+                <li id="header1" class="headerButtons selected" onclick="playheader()">Play</li>
+                <li id="header2" style="display: none;" class="headerButtons" onclick="modsheader()">Mods</li>
+                <li id="header3" class="headerButtons" onclick="faqsheader()">FAQ</li>
+                <li id="header4" class="headerButtons" onclick="installationheader()">Installations</li>
+                <li id="header6" class="headerButtons" onclick="patchnotesheader()">Patch Notes</li>
+            </ul>
         </div>
+
+        <!-- Mods Section -->
         <div id="mods">
             <img class="modketplace-title" src="./assets/images/modketplace-title.png" alt="modketplace">
             <p class="bolded modssubtitle">Community mods for the EaglerForge Installation.</p>
             <div id="modsbox"></div>
         </div>
+
+        <!-- FAQ Section -->
         <div id="faq">
             <p class="bolded faqtitle">Frequently Asked Questions</p>
             <div id="faqbox"></div>
         </div>
+
+        <!-- Installations Section -->
         <div id="installations">
             <p class="bolded faqtitle">Installations</p>
             <div id="installationsbox"></div>
         </div>
+
+        <!-- Game Background -->
         <div id="game-bg" style="background-image: url(./assets/images/web-edition.jpg);">
             <img id="game-title" src="./assets/images/web-title.png" alt="eaglercraft">
         </div>
+
+        <!-- Patch Notes Section -->
         <div id="patchNotes">
             <div style="padding: 2vh 3vw 7vh;">
                 <p class="bolded patchnotes-title">Versions</p>
                 <div class="versionscontainer">
-                    <input class="versionBox" type="checkbox" onchange="sortnote('game')" checked><p>Game Releases</p><input class="versionBox" type="checkbox" onchange="sortnote('site')" checked><p>Site Releases</p>
+                    <input class="versionBox" type="checkbox" onchange="sortnote('game')" checked>
+                    <p>Game Releases</p>
+                    <input class="versionBox" type="checkbox" onchange="sortnote('site')" checked>
+                    <p>Site Releases</p>
                 </div>
                 <hr>
                 <div id="patchnotesbox"></div>
             </div>
         </div>
+
+        <!-- Game Selection Dropdown -->
         <div id="gameSelection">
-                <div class="dropdownSelector" onclick="dropdowntoggle()">
-                    <div style="display: flex; gap: 1vw;">
-                        <div class="centeredIcon">
-                            <img id="gameicon" src="./assets/images/mc-icons/grass-wasm.png" style="width: 2.5vw;" />
-                        </div>
-                        <div class="versionText">
-                            <p id="gametitle" class="bolded">Latest release WASM-GC</p>
-                            <p id="gameversion">1.12.2-u2-wasm-gc</p>
-                        </div>
-                        <div id="dropdownuparrow" class="centeredIcon">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                                 viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2"
-                                 stroke-linecap="round" stroke-linejoin="round" class="dropdownIcon">
-                                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                                <path d="M6 9l6 6l6 -6" />
-                            </svg>
-                        </div>
+            <div class="dropdownSelector" onclick="dropdowntoggle()">
+                <div style="display: flex; gap: 1vw;">
+                    <div class="centeredIcon">
+                        <img id="gameicon" src="./assets/images/mc-icons/grass-wasm.png" style="width: 2.5vw;" />
+                    </div>
+                    <div class="versionText">
+                        <p id="gametitle" class="bolded">Latest release WASM-GC</p>
+                        <p id="gameversion">1.12.2-u2-wasm-gc</p>
+                    </div>
+                    <div id="dropdownuparrow" class="centeredIcon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                             viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2"
+                             stroke-linecap="round" stroke-linejoin="round" class="dropdownIcon">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                            <path d="M6 9l6 6l6 -6" />
+                        </svg>
                     </div>
                 </div>
+            </div>
             <div id="dropdn" class="dropdownMenu" style="visibility: hidden;"></div>
-            <a id="playbutton" href="./version/1.12.2-wasm/"><div id="mainbutton" class="playButton"></div></a>
-            <div class="username centeredIcon bolded"><p id="username">Version 1.0</p></div>
+            <a id="playbutton" href="./version/1.12.2-wasm/">
+                <div id="mainbutton" class="playButton"></div>
+            </a>
+            <div class="username centeredIcon bolded">
+                <p id="username">Version 1.1</p>
+            </div>
         </div>
     </div>
+
+    <!-- Scripts -->
     <script src="./js/index.js"></script>
     <script>
-    if ('serviceWorker' in navigator) {
-    navigator.serviceWorker.register('/sw.js')
-        .catch(console.error);
-    }
+        if ('serviceWorker' in navigator) {
+            navigator.serviceWorker.register('/sw.js')
+                .catch(console.error);
+        }
     </script>
 </body>
 </html>

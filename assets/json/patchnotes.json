@@ -12,5 +12,19 @@
             "Added availability for Eaglercraft Classic and Indev versions.",
             "Made various UI improvements and bug fixes, increasing overall stability and performance."
         ]
+    },
+    {
+        "title": "Visual Bug Fixes & Optimizations",
+        "version": "v1.1",
+        "description": "Improved visual elements and performance.",
+        "date": "Wednesday, November 8th, 2025",
+        "icon": "mod-icons/cursor.png",
+        "type": "site",
+        "notes": [
+            "Fixed various visual bugs affecting the launcher interface.",
+            "Optimized loading times and resource management.",
+            "Added \"Screen size not supported\" warning for incompatible browsers and devices.",
+            "Improved overall user experience with smoother animations and transitions."
+        ]
     }
 ]
