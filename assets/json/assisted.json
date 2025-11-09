@@ -1,9 +1,9 @@
 [
     {
-       "title": "FlamedDogo's Mobile UI",
+       "title": "Eaglercraft Pocket",
        "version": "1.8.8-v3.0.5b",
        "icon": "./assets/images/icons/dogos-mobile.png",
-       "link": "./version/1.8.8/?userscript=flameddogo99-eaglermobile.js",
+       "link": "./version/1.8.8/?userscript=eaglerpocketmobile.user.js",
        "active": true
     },
     {

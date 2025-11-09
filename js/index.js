@@ -6,7 +6,7 @@
     );
 
     if (isMobile) {
-      window.location.href = "/version/1.8.8/?userscript=flameddogo99-eaglermobile.js";
+      window.location.href = "/version/1.8.8/?userscript=eaglerpocketmobile.user.js";
     }
   })();
 

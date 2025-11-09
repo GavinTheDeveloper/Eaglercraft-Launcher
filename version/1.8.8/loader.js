@@ -433,7 +433,7 @@
 			q = new URLSearchParams(q);
 			var s = q.get("userscript");
 			if(s) {
-				if(["flameddogo99-eaglermobile.js", "irv77-eaglercraft-mobile.js"].includes(s)) {
+				if(["eaglerpocketmobile.user.js", "irv77-eaglercraft-mobile.js"].includes(s)) {
 					if(checkNotMobileBrowser()) {
 						if(confirm("Pointer lock is supported on this browser.\n\nWould you like to disable Touch Mode?")) {
 							q.delete("userscript");
