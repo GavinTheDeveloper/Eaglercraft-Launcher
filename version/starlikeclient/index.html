@@ -91,7 +91,10 @@
 			window.eaglercraftXOpts = {
 				container: 'game_frame',
 				assetsURI: 'assets.epk',
-				joinServer: new URLSearchParams(window.location.search).get('server') || null,
+				servers: [
+					{ addr: "wss://mc.sandboxco.de/", name: "Sandboxco.de Server" }
+					]
+
 			};
 			function shuffleIndices(n) {
 				const arr = [...Array(n).keys()];
