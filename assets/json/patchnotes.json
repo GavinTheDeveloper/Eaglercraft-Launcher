@@ -26,5 +26,18 @@
             "Added \"Screen size not supported\" warning for incompatible browsers and devices.",
             "Improved overall user experience with smoother animations and transitions."
         ]
+    },
+    {
+        "title": "Down URL \"gavmc.com\" Fixed",
+        "version": "v1.2",
+        "description": "Resolved connectivity issues with the gavmc.com server.",
+        "date": "Sunday, November 23rd, 2025",
+        "icon": "mod-icons/commands.png",
+        "type": "site",
+        "notes": [
+            "Fixed the down URL issue for gavmc.com, restoring access to related resources.",
+            "Improved error handling for server connectivity issues.",
+            "Replaced outdated links with current and functional URLs."
+        ]
     }
 ]
